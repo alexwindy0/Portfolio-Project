@@ -68,8 +68,16 @@ export const NavBar = () => {
                     <a href="https://www.linkedin.com/in/alex-windy-528045244/" target="_"><img src={linkedin} alt="linkedin"/></a>
                     <a href="mailto:alexekwem@gmail.com"><img src={emailme} alt="gmail"/></a>
                 </div>
-                <button className={`vvd ${activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}`}
-                onClick={() => onUpdateActiveLink('connect')}><span>Let's Connect</span></button>
+                <button
+                className={` vvd ${activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}`}
+                onClick={() => onUpdateActiveLink('contact')}
+                >
+                <a 
+                    href="#contact"
+                    
+                >
+                <span>Let's Connect</span></a>
+                </button>
             </span>
           </Navbar.Collapse>
         </Container>

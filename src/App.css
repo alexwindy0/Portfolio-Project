@@ -89,7 +89,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background:linear-gradient(to bottom, #000428, #004e92);
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -156,8 +156,18 @@ span.navbar-text {
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
+  border-radius: 30px;
 	transition: 0.3s ease-in-out;
 }
+.navbar-text button a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-text button a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
 .navbar-text button span {
   z-index: 1;
 }
@@ -166,14 +176,15 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background:linear-gradient(to top, #000428, #004e92);
   left: 0;
   top: 0;
   z-index: -1;
+  border-radius: 30px;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #fff;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -233,7 +244,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.418) ), url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,7 +253,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(to left, #000428, #004e92);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -271,6 +282,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+}
+.banner button a{
+  text-decoration: none;
+  color: #FFF;
 }
 .banner button svg {
   font-size: 25px;
@@ -306,10 +321,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill{
   padding: 0 0 50px 0;
   position: relative;
+  background: linear-gradient(to bottom, #000428, #004e92);
 }
 
 .skill-bx{
-  background: #151515;
+  background:linear-gradient(to bottom, #000428, #004e92);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;

@@ -36,7 +36,11 @@ export const Skills = () =>{
                             <h2>
                               Skills  
                             </h2>
-                            <p>Cupidatat non id est ex consequat ea consectetur quis voluptate nulla pariatur.</p>
+                            <p>
+                              Creative Graphic Designer, Web Designer with talent for developing unique custom artwork. 
+                              Innovative approach to ideas and concept development. 
+                              Offering 5 (Five) years of expertise overseeing individual projects and brand development.
+                            </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="img" />
