@@ -76,13 +76,13 @@ export const Contact = () => {
                 <form onSubmit={submitEmail}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={mailerState.firstName} placeholder="First Name" onChange={(e) => handleStateChange('firstName', e.target.value)} />
+                      <input type="text" value={mailerState.firstName} placeholder="First Name" onChange={(e) => handleStateChange('firstName', e.target.value)} required/>
                     </Col>
                     <Col size={12} sm={6} className="px-1"> 
-                      <input type="text" value={mailerState.lasttName} placeholder="Last Name" onChange={(e) => handleStateChange('lastName', e.target.value)}/>
+                      <input type="text" value={mailerState.lasttName} placeholder="Last Name" onChange={(e) => handleStateChange('lastName', e.target.value)} required/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={mailerState.email} placeholder="Email Address" onChange={(e) => handleStateChange('email', e.target.value)} />
+                      <input type="email" value={mailerState.email} placeholder="Email Address" onChange={(e) => handleStateChange('email', e.target.value)} required/>
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={mailerState.message} placeholder="Message" onChange={(e) => handleStateChange('message', e.target.value)}></textarea>

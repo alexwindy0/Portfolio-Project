@@ -8,6 +8,7 @@ import fashionwap from "../assets/img/fashionwap.jpg";
 import inspire from "../assets/img/inspire.png";
 import weather from "../assets/img/weather.png";
 import assuagement from "../assets/img/assuagement.png";
+import estore from "../assets/img/estore.png";
 import projImg1 from '../assets/img/project-img1.png';
 import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
@@ -23,10 +24,10 @@ export const Projects = () =>{
             url: "https://alexwindy0.github.io/biggest-startup/"
          },
          {
-            title: "Robo Friends",
-            description: "React-dev",
-            imgUrl: robots,
-            url: "https://robocardbox.netlify.app/"
+            title: "E-store",
+            description: "Booming Speakers",
+            imgUrl: estore,
+            url: "https://estore-umber.vercel.app/"
          },
          {
             title: "Fashion Wap",
@@ -52,7 +53,28 @@ export const Projects = () =>{
             imgUrl: assuagement,
             url: "https://assuagement-foundation.netlify.app/"
          },
+         
     ];
+
+    const projectsSecondBatch = [
+      {
+       title: "Robo Friends",
+       description: "React-dev",
+       imgUrl: robots,
+       url: "https://robocardbox.netlify.app/"
+    },
+    {
+      title: "Business",
+      description: "Demo",
+      imgUrl: projImg1,
+   },
+    {
+       title: "Administrative",
+       description: "Demo",
+       imgUrl: projImg2,
+    },
+      
+ ];
 
     return(
         <section className="project" id="projects">
@@ -93,7 +115,20 @@ export const Projects = () =>{
                                 }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second" className="text-center">Coming Soon</Tab.Pane>
+                            <Tab.Pane eventKey="second" className="text-center">
+                            <Row>
+                            {
+                                projectsSecondBatch.map((project, index) => {
+                                    return(
+                                        <ProjectCard
+                                            key={index}
+                                            {...project}
+                                        />
+                                    )
+                                })
+                            }
+                            </Row>
+                            </Tab.Pane>
                             <Tab.Pane eventKey="third" className="text-center">Coming Soon</Tab.Pane>
                         </Tab.Content>
                       </Tab.Container>
