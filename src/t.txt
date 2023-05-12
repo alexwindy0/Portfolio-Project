@@ -1,3 +1,0 @@
-REACT_APP_MAILCHIMP_URL="https://gmail.us11.list-manage.com/subscribe/post"
-REACT_APP_MAILCHIMP_U="183d9106a5f710f4c170af907"
-REACT_APP_MAILCHIMP_ID="75c4fef3bb"
