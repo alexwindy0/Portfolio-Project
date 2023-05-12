@@ -26,7 +26,7 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
     console.log({ mailerState });
-    const response = await fetch("http://localhost:3004/send", {
+    const response = await fetch("http://localhost:8080/send", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
